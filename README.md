@@ -25,7 +25,7 @@ brew install PeonPing/tap/peon-ping
 peon-ping-setup
 ```
 
-**Install all 40 packs** (every language and franchise):
+**Install all packs** (every language and franchise):
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/PeonPing/peon-ping/main/install.sh | bash -s -- --all
@@ -119,7 +119,7 @@ peon-ping works with any agentic IDE that supports hooks. Adapters translate IDE
 
 ## Sound packs
 
-40 packs across Warcraft, StarCraft, Red Alert, Portal, Zelda, Dota 2, Helldivers 2, Elder Scrolls, and more. The default install includes 10 curated English packs:
+40+ packs across Warcraft, StarCraft, Red Alert, Portal, Zelda, Dota 2, Helldivers 2, Elder Scrolls, and more. The default install includes 10 curated English packs:
 
 | Pack | Character | Sounds |
 |---|---|---|
@@ -134,9 +134,9 @@ peon-ping works with any agentic IDE that supports hooks. Adapters translate IDE
 | `tf2_engineer` | Engineer (Team Fortress 2) | "Sentry going up.", "Nice work!", "Cowboy up!" |
 | `hd2_helldiver` | Helldiver (Helldivers 2) | "For democracy!", "How 'bout a nice cup of Liber-tea?" |
 
-**[Browse all 40 packs with audio previews &rarr; openpeon.com/packs](https://openpeon.com/packs)**
+**[Browse all packs with audio previews &rarr; openpeon.com/packs](https://openpeon.com/packs)**
 
-Install all 36 with `--all`, or switch packs anytime:
+Install all with `--all`, or switch packs anytime:
 
 ```bash
 peon --pack glados                # switch to a specific pack
@@ -163,12 +163,12 @@ bash .claude/hooks/peon-ping/uninstall.sh           # project-local
 
 `peon.sh` is a Claude Code hook registered for `SessionStart`, `UserPromptSubmit`, `Stop`, `Notification`, and `PermissionRequest` events. On each event it maps to a CESP sound category, picks a random voice line (avoiding repeats), plays it via `afplay` (macOS), PowerShell `MediaPlayer` (WSL2), or `paplay`/`ffplay`/`mpv`/`aplay` (Linux), and updates your Terminal tab title.
 
-Sound packs are downloaded from the [OpenPeon registry](https://github.com/PeonPing/registry) at install time. The original 40 packs are hosted in [PeonPing/og-packs](https://github.com/PeonPing/og-packs). Sound files are property of their respective publishers (Blizzard, Valve, EA, etc.) and are distributed under fair use for personal notification purposes.
+Sound packs are downloaded from the [OpenPeon registry](https://github.com/PeonPing/registry) at install time. The official packs are hosted in [PeonPing/og-packs](https://github.com/PeonPing/og-packs). Sound files are property of their respective publishers (Blizzard, Valve, EA, etc.) and are distributed under fair use for personal notification purposes.
 
 ## Links
 
 - [peonping.com](https://peonping.com/) — landing page
 - [openpeon.com](https://openpeon.com/) — CESP spec, pack browser, creation guide
 - [OpenPeon registry](https://github.com/PeonPing/registry) — pack registry (GitHub Pages)
-- [og-packs](https://github.com/PeonPing/og-packs) — the original 36 sound packs
+- [og-packs](https://github.com/PeonPing/og-packs) — official sound packs
 - [License (MIT)](LICENSE)

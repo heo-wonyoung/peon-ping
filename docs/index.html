@@ -1370,7 +1370,7 @@ html { scrollbar-width: thin; scrollbar-color: var(--wc3-card-border) var(--wc3-
   </div>
 
   <div class="contribute-cta">
-    <p><strong>36+ packs and counting!</strong> You're only seeing a few above &mdash; there are many more including GLaDOS, StarCraft Terran units, Czech, Spanish &amp; Russian &amp; Polish Warcraft packs, and others.</p>
+    <p><strong><span class="pack-count">40+</span> packs and counting!</strong> You're only seeing a few above &mdash; there are many more including GLaDOS, StarCraft Terran units, Czech, Spanish &amp; Russian &amp; Polish Warcraft packs, and others.</p>
     <p>Run <code>peon --packs</code> to see them all, or <a href="https://openpeon.com/packs">browse the full catalog at openpeon.com</a>.</p>
     <p class="contribute-ideas"><strong>Want to add your own?</strong> Any game, any character &mdash; create a GitHub repo with your sounds, register it, and it's available to everyone. <a href="https://openpeon.com/create">Create a pack &rarr;</a></p>
   </div>
@@ -1466,7 +1466,7 @@ html { scrollbar-width: thin; scrollbar-color: var(--wc3-card-border) var(--wc3-
       <div class="feature-icon">&#x1f4e6;</div>
       <div class="feature-text">
         <h3>Pack system</h3>
-        <p>36+ packs across 6 languages. <a href="#picker">Pick your favorites</a> or <a href="https://openpeon.com/create">create your own.</a></p>
+        <p><span class="pack-count">40+</span> packs across 7 languages. <a href="#picker">Pick your favorites</a> or <a href="https://openpeon.com/create">create your own.</a></p>
       </div>
     </div>
   </div>
@@ -1494,6 +1494,15 @@ html { scrollbar-width: thin; scrollbar-color: var(--wc3-card-border) var(--wc3-
 </footer>
 
 <script>
+// --- Dynamic pack count from registry ---
+fetch('https://peonping.github.io/registry/index.json')
+  .then(r => r.json())
+  .then(data => {
+    const count = Array.isArray(data) ? data.length : Object.keys(data).length;
+    document.querySelectorAll('.pack-count').forEach(el => { el.textContent = count + '+'; });
+  })
+  .catch(() => {}); // keep fallback "40+" on failure
+
 // --- Copy install command ---
 const clipboardSVG = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="8" height="8" rx="1.5"/><path d="M3 11V2.5A1.5 1.5 0 014.5 1H10"/></svg>';
 const checkSVG = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5L6.5 12L13 4"/></svg>';
