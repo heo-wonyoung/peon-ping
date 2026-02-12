@@ -113,6 +113,7 @@ Edit `$CLAUDE_CONFIG_DIR/hooks/peon-ping/config.json` (default: `~/.claude/hooks
 | `sc_tank` | Siege Tank (StarCraft) | "Ready to roll out", "Absolutely", "Done and done" | [@workdd](https://github.com/workdd) |
 | `sc_vessel` | Science Vessel (StarCraft) | "Explorer reporting", "Receiving", "Affirmative" | [@workdd](https://github.com/workdd) |
 | `aom_greek` | Greek Villager (Age of Mythology) | "Prostagma?", "Etoimon", "Malista" | [@amitaifrey](https://github.com/amitaifrey) |
+| `wc2_peasant` | Human Peasant (Warcraft II) | "Ready to serve.", "Job's done.", "Right-o." | [@sebbeth](https://github.com/sebbeth) |
 
 Switch packs from the CLI:
 
