@@ -1,0 +1,119 @@
+{
+  "version": "1.0",
+  "updated": "2026-02-19",
+  "packs": [
+    {
+      "name": "kr_kdh",
+      "display_name": "김동현 밈 (Stun Gun KDH)",
+      "version": "1.0.0",
+      "description": "UFC 김동현 매미킴 밈 사운드 팩",
+      "author": {
+        "name": "young",
+        "github": "heo-wonyoung"
+      },
+      "trust_tier": "official",
+      "categories": [
+        "session.start",
+        "task.acknowledge",
+        "task.complete",
+        "task.error",
+        "input.required",
+        "resource.limit",
+        "user.spam"
+      ],
+      "language": "ko",
+      "license": "CC-BY-NC-4.0",
+      "sound_count": 15,
+      "source_repo": "heo-wonyoung/kr-meme-packs",
+      "source_ref": "v1.0.0",
+      "source_path": "kr_kdh",
+      "tags": ["korean", "meme", "김동현", "매미킴", "UFC"],
+      "added": "2026-02-19",
+      "updated": "2026-02-19"
+    },
+    {
+      "name": "peon",
+      "display_name": "Orc Peon",
+      "version": "1.0.0",
+      "description": "Orc Peon sound pack from Warcraft III",
+      "author": {
+        "name": "tonyyont",
+        "github": "tonyyont"
+      },
+      "trust_tier": "official",
+      "categories": [
+        "session.start",
+        "task.acknowledge",
+        "task.complete",
+        "task.error",
+        "input.required",
+        "resource.limit",
+        "user.spam"
+      ],
+      "language": "en",
+      "license": "CC-BY-NC-4.0",
+      "source_repo": "PeonPing/og-packs",
+      "source_ref": "v1.1.0",
+      "source_path": "peon",
+      "tags": ["gaming", "warcraft", "blizzard"],
+      "added": "2026-02-12",
+      "updated": "2026-02-12"
+    },
+    {
+      "name": "glados",
+      "display_name": "GLaDOS",
+      "version": "1.0.0",
+      "description": "GLaDOS from Portal",
+      "author": {
+        "name": "tonyyont",
+        "github": "tonyyont"
+      },
+      "trust_tier": "official",
+      "categories": [
+        "session.start",
+        "task.acknowledge",
+        "task.complete",
+        "task.error",
+        "input.required",
+        "resource.limit",
+        "user.spam"
+      ],
+      "language": "en",
+      "license": "CC-BY-NC-4.0",
+      "source_repo": "PeonPing/og-packs",
+      "source_ref": "v1.1.0",
+      "source_path": "glados",
+      "tags": ["gaming", "portal", "valve"],
+      "added": "2026-02-12",
+      "updated": "2026-02-12"
+    },
+    {
+      "name": "sc_scv",
+      "display_name": "StarCraft SCV",
+      "version": "1.0.0",
+      "description": "SCV from StarCraft",
+      "author": {
+        "name": "tonyyont",
+        "github": "tonyyont"
+      },
+      "trust_tier": "official",
+      "categories": [
+        "session.start",
+        "task.acknowledge",
+        "task.complete",
+        "task.error",
+        "input.required",
+        "resource.limit",
+        "user.spam"
+      ],
+      "language": "en",
+      "license": "CC-BY-NC-4.0",
+      "source_repo": "PeonPing/og-packs",
+      "source_ref": "v1.1.0",
+      "source_path": "sc_scv",
+      "tags": ["gaming", "starcraft", "blizzard"],
+      "added": "2026-02-12",
+      "updated": "2026-02-12"
+    }
+  ]
+}
