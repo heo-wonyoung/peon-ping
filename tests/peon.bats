@@ -102,6 +102,54 @@ json.dump(state, open('$TEST_DIR/.state.json', 'w'))
 }
 
 # ============================================================
+# Local config override (project-local .claude/hooks/peon-ping/config.json)
+# ============================================================
+
+@test "local config overrides global config when present" {
+  # Create a fake project dir with a local config pointing to sc_kerrigan
+  local project_dir
+  project_dir="$(mktemp -d)"
+  local local_cfg_dir="$project_dir/.claude/hooks/peon-ping"
+  mkdir -p "$local_cfg_dir"
+  cat > "$local_cfg_dir/config.json" <<'JSON'
+{
+  "active_pack": "sc_kerrigan",
+  "volume": 0.5,
+  "enabled": true,
+  "categories": {
+    "session.start": true,
+    "task.complete": true
+  }
+}
+JSON
+
+  # Run peon.sh from the project dir (PWD determines local config lookup)
+  # Use a subshell so the cd is scoped
+  (
+    cd "$project_dir"
+    echo '{"hook_event_name":"Stop","cwd":"'"$project_dir"'","session_id":"s1","permission_mode":"default"}' \
+      | CLAUDE_PEON_DIR="$TEST_DIR" PEON_TEST=1 bash "$PEON_SH" 2>/dev/null
+  )
+  sleep 0.2  # allow async afplay mock to finish writing log
+  rm -rf "$project_dir"
+
+  # Should have played sc_kerrigan sound (from local config), not peon
+  [ -f "$TEST_DIR/afplay.log" ]
+  local sound
+  sound=$(tail -1 "$TEST_DIR/afplay.log" | awk '{print $NF}')
+  [[ "$sound" == *"/packs/sc_kerrigan/"* ]]
+}
+
+@test "falls back to global config when no local config present" {
+  # No local config — should use global config with peon pack
+  run_peon '{"hook_event_name":"Stop","cwd":"/tmp/myproject","session_id":"s1","permission_mode":"default"}'
+  [ "$PEON_EXIT" -eq 0 ]
+  afplay_was_called
+  sound=$(afplay_sound)
+  [[ "$sound" == *"/packs/peon/sounds/"* ]]
+}
+
+# ============================================================
 # Disabled config
 # ============================================================
 
