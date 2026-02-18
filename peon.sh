@@ -42,7 +42,14 @@ if [ ! -d "$PEON_DIR/packs" ]; then
     unset _hooks_dir
   fi
 fi
-CONFIG="$PEON_DIR/config.json"
+# Local project config overrides global config
+_local_config="${PWD}/.claude/hooks/peon-ping/config.json"
+if [ -f "$_local_config" ]; then
+  CONFIG="$_local_config"
+else
+  CONFIG="$PEON_DIR/config.json"
+fi
+unset _local_config
 STATE="$PEON_DIR/.state.json"
 
 # --- Resolve a bundled script from scripts/ (handles local + Homebrew/Cellar installs) ---
