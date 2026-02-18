@@ -8,9 +8,9 @@
 
 ![Claude Code](https://img.shields.io/badge/Claude_Code-hook-ffab01) ![Codex](https://img.shields.io/badge/Codex-adapter-ffab01) ![Cursor](https://img.shields.io/badge/Cursor-adapter-ffab01) ![OpenCode](https://img.shields.io/badge/OpenCode-adapter-ffab01) ![Kilo CLI](https://img.shields.io/badge/Kilo_CLI-adapter-ffab01) ![Kiro](https://img.shields.io/badge/Kiro-adapter-ffab01) ![Windsurf](https://img.shields.io/badge/Windsurf-adapter-ffab01) ![Antigravity](https://img.shields.io/badge/Antigravity-adapter-ffab01)
 
-**Game character voice lines when your AI coding agent needs attention.**
+**Game character voice lines when your AI coding agent needs attention — or let the agent pick its own sound via MCP.**
 
-AI coding agents don't notify you when they finish or need permission. You tab away, lose focus, and waste 15 minutes getting back into flow. peon-ping fixes this with voice lines from Warcraft, StarCraft, Portal, Zelda, and more — works with **Claude Code**, **Codex**, **Cursor**, **OpenCode**, **Kilo CLI**, **Kiro**, **Windsurf**, and **Google Antigravity**.
+AI coding agents don't notify you when they finish or need permission. You tab away, lose focus, and waste 15 minutes getting back into flow. peon-ping fixes this with voice lines from Warcraft, StarCraft, Portal, Zelda, and more — works with **Claude Code**, **Codex**, **Cursor**, **OpenCode**, **Kilo CLI**, **Kiro**, **Windsurf**, **Google Antigravity**, and any MCP client.
 
 **See it in action** &rarr; [peonping.com](https://peonping.com/)
 

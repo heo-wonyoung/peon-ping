@@ -8,9 +8,9 @@
 
 ![Claude Code](https://img.shields.io/badge/Claude_Code-hook-ffab01) ![Codex](https://img.shields.io/badge/Codex-adapter-ffab01) ![Cursor](https://img.shields.io/badge/Cursor-adapter-ffab01) ![OpenCode](https://img.shields.io/badge/OpenCode-adapter-ffab01) ![Kilo CLI](https://img.shields.io/badge/Kilo_CLI-adapter-ffab01) ![Kiro](https://img.shields.io/badge/Kiro-adapter-ffab01) ![Windsurf](https://img.shields.io/badge/Windsurf-adapter-ffab01) ![Antigravity](https://img.shields.io/badge/Antigravity-adapter-ffab01)
 
-**当你的 AI 编程助手需要关注时，播放游戏角色语音。**
+**当你的 AI 编程助手需要关注时，播放游戏角色语音 — 或通过 MCP 让 AI 自行选择音效。**
 
-AI 编程助手完成任务或需要权限时不会通知你。你切换标签页、失去焦点，然后浪费 15 分钟重新进入状态。peon-ping 通过魔兽争霸、星际争霸、传送门、塞尔达等游戏的角色语音来解决这个问题 — 支持 **Claude Code**、**Codex**、**Cursor**、**OpenCode**、**Kilo CLI**、**Kiro**、**Windsurf** 和 **Google Antigravity**。
+AI 编程助手完成任务或需要权限时不会通知你。你切换标签页、失去焦点，然后浪费 15 分钟重新进入状态。peon-ping 通过魔兽争霸、星际争霸、传送门、塞尔达等游戏的角色语音来解决这个问题 — 支持 **Claude Code**、**Codex**、**Cursor**、**OpenCode**、**Kilo CLI**、**Kiro**、**Windsurf**、**Google Antigravity** 及任何 MCP 客户端。
 
 **查看演示** &rarr; [peonping.com](https://peonping.com/)
 

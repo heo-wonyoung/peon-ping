@@ -8,11 +8,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "peon-ping — Stop babysitting your terminal",
   description:
-    "Game character voice lines as notifications for Claude Code, Codex, Cursor, Antigravity & more. Never miss when your AI agent needs you.",
+    "Sound notifications for any AI agent — hooks for Claude Code, Cursor, Codex & more, plus an MCP server so the agent can choose its own sounds.",
   openGraph: {
     title: "peon-ping — Stop babysitting your terminal",
     description:
-      "Game character voice lines as notifications for Claude Code, Codex, Cursor, Antigravity & more. Never miss when your AI agent needs you.",
+      "Sound notifications for any AI agent — hooks for Claude Code, Cursor, Codex & more, plus an MCP server so the agent can choose its own sounds.",
     type: "website",
     url: "https://peonping.com/",
     images: ["https://peonping.com/images/og-image.png"],

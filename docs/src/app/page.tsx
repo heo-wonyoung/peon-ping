@@ -825,7 +825,7 @@ export default function LandingPage() {
           </p>
           <h1>Stop babysitting your terminal</h1>
           <p className="hero-sub">
-            Game character voice lines the instant <strong>Claude Code</strong>, <strong>Codex</strong>, <strong>Cursor</strong>, <strong>OpenCode</strong>, <strong>Kiro</strong>, or <strong>Antigravity</strong> finishes or needs permission. Never lose flow to a silent terminal again.
+            Game character voice lines the instant your AI agent finishes or needs permission. Or let the agent choose its own sound via MCP. Works with <strong>Claude Code</strong>, <strong>Codex</strong>, <strong>Cursor</strong>, <strong>OpenCode</strong>, <strong>Kiro</strong>, <strong>Windsurf</strong>, <strong>Antigravity</strong>, and more. Never lose flow to a silent terminal again.
           </p>
           <CopyBlock command="brew install PeonPing/tap/peon-ping" />
           <p style={{ textAlign: "center", marginTop: "0.75rem", color: "var(--wc3-text-dim)", fontSize: "0.85rem" }}>
